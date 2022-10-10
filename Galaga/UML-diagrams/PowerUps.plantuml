@@ -1,0 +1,47 @@
+@startuml
+
+abstract Block
+
+Block <-- HardenedBlock
+Block <-- Healing
+Block <-- Hungry
+Block <-- Invisible
+Block <-- NormalBlock
+Block <-- Teleporting
+Block <-- Unbreakable
+
+abstract Block{
+    {abstract} hit() : void
+}
+
+class Hardened{
+    + hit() : void 
+    + Hardened()
+}
+class Healing{
+    + hit() : void 
+    + Hardened()
+}
+class Hungry{
+    + hit() : void 
+    + Hardened()
+}
+class Invisible{
+    + hit() : void 
+    + Hardened()
+}
+class NormalBlock{
+    + hit() : void 
+    + Hardened()
+}
+class Teleporting{
+    + hit() : void 
+    + Hardened()
+}
+class Unbreakable{
+    + hit() : void 
+    + Hardened()
+}
+
+
+@enduml

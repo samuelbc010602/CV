@@ -1,0 +1,16 @@
+@startuml observer
+
+Actor Player as player
+participant GameRunning as placer
+participant PowerUpBall as powerBall
+participant NormalBall as normal
+
+player -> placer : Player destroys block with powerup
+placer -> powerBall : PowerUpBall is spawned
+player -> placer : Player collides with powerup
+powerBall -> normal : Invincible powerup is turned on
+powerBall -> normal : Invincible powerup is turned off
+
+
+
+@enduml

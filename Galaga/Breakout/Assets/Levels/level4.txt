@@ -1,0 +1,48 @@
+Map:
+------------
+------------
+------------
+------------
+------------
+----????----
+----#%#%----
+---#%9%#%---
+---1%99#1---
+--1%9999#1--
+--10#0#0#0--
+--1%#%#%#1--
+--1%#%#%#1--
+---#%#%#%---
+---#0#0#0---
+----#%#%----
+----5555----
+------------
+------------
+------------
+------------
+------------
+------------
+------------
+------------
+Map/
+
+Meta:
+Name: Central Mass
+Hardened: #
+Healing: 0
+Hungry: 1
+Invisible: ?
+Teleporting: 5
+Unbreakable: 9
+PowerUp: #
+Meta/
+
+Legend:
+#) red-block.png
+0) blue-block.png
+1) yellow-block.png
+?) green-block.png
+5) purple-block.png
+9) grey-block.png
+%) orange-block.png
+Legend/

@@ -1,0 +1,49 @@
+@startuml statemachine
+Statemachine o-- GameOver
+Statemachine o-- GameRunning 
+Statemachine o-- GamePaused
+Statemachine o-- MainMenu
+
+class Statemachine{
+    + Statemachine()
+}
+class GameOver{
+    + getOrSetInstance() : GameOver
+    + GameOver()
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    + ResetState() : void
+    + UpdateState() : void
+    - InitializeGameState() : void
+}
+class GameRunning{
+    + getOrSetInstance() : GameRunning
+    + GameRunning()
+    + UpdateState() : void 
+    + RenderState() : void 
+    + HandleKeyEvent() : void 
+    + ResetState() : void
+    + UpdateState() : void
+    - makeLevel() : void 
+    - powerUp() : void
+}
+class GamePaused{
+    + getOrSetInstance() : GamePaused
+    + GamePaused()
+    + ResetState() : void 
+    + UpdateState() : void 
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    - InitializeGameState() : void
+}
+class MainMenu{
+    + getOrSetInstance() : MainMenu
+    + MainMenu()
+    + UpdateState() : void
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    - InitializeGameState() : void
+}
+
+
+@enduml

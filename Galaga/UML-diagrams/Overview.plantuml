@@ -1,0 +1,166 @@
+@startuml overview
+
+Statemachine o-- GameOver
+Statemachine o-- GamePaused
+Statemachine o-- GameRunning 
+Statemachine o-- MainMenu
+
+GameRunning -r- GameOver
+GameRunning -l- GamePaused
+GameRunning -l- MainMenu
+
+GameOver --- MainMenu
+
+
+class Statemachine{
+    + Statemachine()
+}
+class GameOver{
+    + getOrSetInstance() : GameOver
+    + GameOver()
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    + ResetState() : void
+    + UpdateState() : void
+    - InitializeGameState() : void
+}
+class GameRunning{
+    + getOrSetInstance() : GameRunning
+    + GameRunning()
+    + UpdateState() : void 
+    + RenderState() : void 
+    + HandleKeyEvent() : void 
+    + ResetState() : void
+    + UpdateState() : void
+    - makeLevel() : void 
+    - powerUp() : void
+}
+class GamePaused{
+    + getOrSetInstance() : GamePaused
+    + GamePaused()
+    + ResetState() : void 
+    + UpdateState() : void 
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    - InitializeGameState() : void
+}
+class MainMenu{
+    + getOrSetInstance() : MainMenu
+    + MainMenu()
+    + UpdateState() : void
+    + HandleKeyEvent() : void
+    + RenderState() : void
+    - InitializeGameState() : void
+}
+
+abstract Ball
+abstract Block
+class Player
+
+GameRunning - Block
+GameRunning - Player
+GameRunning -d- Ball
+
+
+class Player{
+    + player()
+    + move() : void
+    + ProcessEvent() : void
+    + Render() : void
+    - UpdateDirection() : void
+    - SetMoveLeft() : void
+    - SetMoveRight() : void
+}
+
+abstract Ball{
+    {abstract} ballMove() : void
+    ball()
+}
+
+abstract Block{
+    {abstract} hit() : void
+    Block()
+}
+
+abstract Block
+
+Block <-- Hardened
+Block <-- Healing
+Block <-- Hungry
+Block <-- Teleporting
+Block <-- NormalBlock
+Block <-- Invisible
+Block <-- Unbreakable
+
+abstract Block{
+    {abstract} hit() : void
+}
+
+class Hardened{
+    + hit() : void 
+    + Hardened()
+}
+class Healing{
+    + hit() : void 
+    + Hardened()
+}
+class Hungry{
+    + hit() : void 
+    + Hardened()
+}
+class Invisible{
+    + hit() : void 
+    + Hardened()
+}
+class NormalBlock{
+    + hit() : void 
+    + Hardened()
+}
+class Teleporting{
+    + hit() : void 
+    + Hardened()
+}
+class Unbreakable{
+    + hit() : void 
+    + Hardened()
+}
+
+class NormallBall{
+    + ballMove() : void
+    + NormallBall()
+}
+class PowerUpBall{
+    + ballMove() : void
+    + sendMessage() : void
+    + powerUp() : void
+    + PowerUpBall()
+}
+
+class asciiLoader {
+    + loadASCII() : void
+}
+
+
+GameRunning -- asciiLoader
+GameRunning -[hidden]-> Ball
+
+Ball -[hidden]-> Block
+Ball -[hidden]-> Player
+
+
+Ball <-- NormallBall
+Ball <-- PowerUpBall
+
+Teleporting -u- asciiLoader
+
+NormallBall --- Block
+NormallBall --- Player
+
+PowerUpBall --- Player
+
+GameRunning --- PowerUpBall
+
+
+
+
+@enduml

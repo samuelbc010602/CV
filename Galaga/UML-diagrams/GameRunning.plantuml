@@ -1,0 +1,43 @@
+@startuml GameRunning
+
+abstract Ball
+abstract Block
+class Player
+
+GameRunning - Block
+GameRunning - Player
+GameRunning - Ball
+
+class GameRunning{
+    + getOrSetInstance() : GameRunning
+    + GameRunning()
+    + UpdateState() : void 
+    + RenderState() : void 
+    + HandleKeyEvent() : void 
+    + ResetState() : void
+    + UpdateState() : void
+    - makeLevel() : void 
+    - powerUp() : void
+}
+
+class Player{
+    + player()
+    + move() : void
+    + ProcessEvent() : void
+    + Render() : void
+    - UpdateDirection() : void
+    - SetMoveLeft() : void
+    - SetMoveRight() : void
+}
+
+abstract Ball{
+    {abstract} ballMove() : void
+    ball()
+}
+
+abstract Block{
+    {abstract} hit() : void
+    Block()
+}
+
+@enduml
