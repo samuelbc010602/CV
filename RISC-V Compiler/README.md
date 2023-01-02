@@ -4,4 +4,3 @@ lav-niveau sprog der er en arveart af assembly. Filen simulate.c læser en .dis 
 funktion der implementerer den givne RISC-V kommando. 
 
 Jeg har vedhæftet selve opgave beskrivelsen som en pdf hvis det kunne være af interesse.
-
