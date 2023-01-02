@@ -1,4 +1,4 @@
-# DIKUGames
+# Galaga
 Dette var et eksamensprojekt jeg havde i forbindelse med kurset SoftwareUdvikling på KU på første år. 
 Vi fik til opgave at lave et spil der minder meget om det klassiske "Space Invaders" video-spil fra 80'erne, hvor vi skulle implementere mange af de teknikker og metoder vi har lært igennem hele kurset. Selve spillet er bygget oven på en game-engine som vi fik stillet til rådighed af DIKU, den har jeg ikke linket til her, denne mappe indeholder kun de filer jeg selv har lavet. 
 
