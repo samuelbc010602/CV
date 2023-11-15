@@ -1,7 +1,8 @@
-# Toldprogram
-Dette var et program jeg lavede i forlængelse af min fars arbejde. Jeg fik stillet til opgave at lave et program der kunne hente alle toldkoder
-fra et bestemt land og sammenligne dem med andre landes toldkoder og derefter rangere dem i forhold til de varer, hvor der var den største difference, med andre ord
-finde de vare hvor et bestemt land skulle betale mindst i told for at sælge det på det danske marked i forhold til andre lande.
+# Customs program
+This was a program I made in continuation of my father's work. I was given the task of creating a program that could retrieve all customs codes
+from a particular country and compare them with the customs codes of other countries and then rank them in relation to the items where there was the biggest difference, in other words
+find the goods where a certain country had to pay the least in customs to sell it on the Danish market compared to other countries.
 
-Selve programmet bruger parallelisering til at læse toldkoder samtidig for mindske køretiden af selve programmet. Ved at parallelisere opgaven kunne man 
-gøre det meget hurtigere end hvis man bare havde brugt en kerne til at læse samtlige tusinder af toldkoder sekventielt. Udover dette bruger jeg også webscraping til at læse fra data fra internettet, bemærk at dette program kræver at man har installeret en webdriver før man kan køre programmet. 
+The program itself uses parallelization to read customs codes simultaneously to reduce the running time of the program itself. By parallelizing the task, you could
+do it much faster than if you had just used a core to read all thousands of customs codes sequentially.
+Besides this I also use webscraping to read data from the internet, note that this program requires a web driver to be installed before you can run the program.

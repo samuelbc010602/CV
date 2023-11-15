@@ -1,11 +1,16 @@
 # Galaga
-Dette var et eksamensprojekt jeg havde i forbindelse med kurset SoftwareUdvikling på KU på første år. 
-Vi fik til opgave at lave et spil der minder meget om det klassiske "Space Invaders" video-spil fra 80'erne, hvor vi skulle implementere mange af de teknikker og metoder vi har lært igennem hele kurset. Selve spillet er bygget oven på en game-engine som vi fik stillet til rådighed af DIKU, den har jeg ikke linket til her, denne mappe indeholder kun de filer jeg selv har lavet. 
+This was an exam project I had in connection with the Software Development course at KU in my first year.
+We were tasked with making a game very reminiscent of the classic "Space Invaders" video game from the 80s,
+where we had to implement many of the techniques and methods we have learned throughout the course.
+The game itself is built on top of a game engine that was made available to us by DIKU, I have not linked it here, this folder only contains the files I have made myself.
 
-Koden følger det objekt-orienterede paradigme, hvor "Solid Principles" er blevet fulgt meget nøje for at gøre koden modulær og adapterbar til nye ændringer, hvilket der kom med to ugers mellemrum over en seks ugers periode. Jeg har lagt meget vægt på at opfylde dependency inversion princippet, ved at lave en facade (facade.cs) hvorigennem høj-niveau kode kommunikerer igennem en facade der skjuler og simplificere mange af de forskellige lav-niveau funktionaliteter fra selve spilmotoren (game engine) der er nødvendige for at spillet kan fungere. Udover dette er der også blevet lagt meget vægt på testning for kunne verificere at funktionaliteten af programmet opfylder specifikationerne. Her hare jeg stræbet efter at opnå C-0 og C-1 test coverage.
+The code follows the object-oriented paradigm, where "Solid Principles" have been followed very closely to make the code modular and adaptable to new changes,
+which came at two-week intervals over a six-week period. I have put a lot of emphasis on fulfilling the dependency inversion principle,
+by creating a facade (facade.cs) through which high-level code communicates through a facade that hides and simplifies
+many of the various low-level functionalities from the game engine itself that are necessary for the game to function.
+In addition to this, much emphasis has also been placed on testing to be able to verify that the functionality of the program meets the specifications.
+Here I strived to achieve C-0 and C-1 test coverage.
 
-Udover dette har jeg oså inkluderet en pdf-fil med rapporten, der dokumentere hele arbejdsprocessen der har ligget bag programmet, hvis det kunnne være af interesse.
+In addition to this, I have also included a pdf file with the report documenting the entire work process that has been behind the program, if it could be of interest.
 
-Her har jeg kun inkluderet den kode som jeg selv har været med til at lave. 
-
-
+Here I have only included the code that I myself have helped to create.

@@ -1,6 +1,6 @@
-Dette var en gruppeopgave fra kurset CompSys i blok 1-2 fra tredje semester, hvor vi skulle implementere en RISC-V compiler der kunne læse RISC-V 
-kommandoer fra basis instruktionssættet og udvidelsen for multiplikation, konvertere dem til C-kode og til sidst eksekvere koden. RISC-V er et 
-lav-niveau sprog der er en arveart af assembly. Filen simulate.c læser en .dis fil en kommando ad gangen, uddelegere hver kommando til en specifik 
-funktion der implementerer den givne RISC-V kommando. 
+This was a group assignment from the course CompSys in block 1-2 from the third semester, where we had to implement a RISC-V compiler that could read RISC-V
+commands from the base instruction set and the extension for multiplication, convert them to C code, and finally execute the code. RISC-V is one
+low-level language that is a descendant of assembly. The simulate.c file reads a .dis file one command at a time, delegating each command to a specific one
+function that implements the given RISC-V command.
 
-Jeg har vedhæftet selve opgave beskrivelsen som en pdf hvis det kunne være af interesse.
+I have attached the actual task description as a pdf if it could be of interest
